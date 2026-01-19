@@ -1,0 +1,50 @@
+rootProject.name = 'ecommerce-ucp-monorepo'
+
+// Libs
+include 'libs:common-web'
+include 'libs:common-ucp'
+
+// Gateway Layer
+include 'gateway:api-gateway'
+include 'gateway:identity-server'
+include 'gateway:client-service'
+include 'gateway:signalr-service'
+include 'gateway:ucp-gateway'
+
+// IAM Services
+include 'services:auth-service'
+include 'services:identity-service'
+include 'services:user-profile-service'
+
+// Catalog
+include 'services:catalog-service'
+
+// Inventory
+include 'services:stock-service'
+include 'services:reservation-service'
+include 'services:warehouse-service'
+
+// Order
+include 'services:cart-service'
+include 'services:order-service'
+include 'services:checkout-service'
+
+// Payment
+include 'services:payment-service'
+include 'services:billing-service'
+
+// Shipping
+include 'services:shipping-service'
+include 'services:tracking-service'
+
+// Notification
+include 'services:notification-service'
+
+// Offer
+include 'services:promotion-service'
+
+// Search
+include 'services:searching-service'
+
+// Audit
+include 'services:audit-service'
